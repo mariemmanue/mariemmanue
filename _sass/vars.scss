@@ -12,3 +12,23 @@ $image-size: 200px;
 $max-width: 700px;
 $med-width: 600px;
 $small-width: 480px;
+
+/* ===== Site Theme Variables ===== */
+
+/* Fonts */
+$font-body: "Lora", serif;              // or "Merriweather", serif
+$font-heading: "Playfair Display", serif;
+
+/* Colors (accessible contrasts on white-ish bg) */
+$color-text:   #2F2A26;   // deep brown
+$color-bg:     #FAF7F2;   // warm off-white / parchment
+$color-accent: #7A9E84;   // sage green (links / hovers)
+$color-accent2:#D9C6A5;   // sand/wheat (highlights)
+$color-muted:  #B8A89A;   // taupe (subtle)
+$color-border: #E6DED3;   // hairline dividers
+
+/* Existing sizes (keep yours) */
+$image-size: 200px;
+$max-width: 700px;
+$med-width: 600px;
+$small-width: 480px;
