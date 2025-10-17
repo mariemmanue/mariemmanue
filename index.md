@@ -22,8 +22,8 @@ I’ve been supported by the [NSF-GRFP](https://www.pomona.edu/news/2023/05/03-e
 **2024**
 - *Closing the Gap: A Call for More Inclusive Language Technologies.*  
   Chinasa Okolo & **Marie Tano.**  
-  *Brookings Institution Commentary,* December 2024. [[link](https://www.brookings.edu/articles/closing-the-gap-a-call-for-more-inclusive-language-technologies/)]
+  Research Commentary, *Brookings Institution*, December 2024. [[link](https://www.brookings.edu/articles/closing-the-gap-a-call-for-more-inclusive-language-technologies/)]
 - *Moving Toward Truly Responsible AI Development in the Global AI Market.*  
   Chinasa Okolo & **Marie Tano.**  
-  *Brookings Institution Commentary,* October 2024. [[link](https://www.brookings.edu/articles/moving-toward-truly-responsible-ai-development-in-the-global-ai-market/)]
+  Research Commentary, *Brookings Institution*, October 2024. [[link](https://www.brookings.edu/articles/moving-toward-truly-responsible-ai-development-in-the-global-ai-market/)]
 
