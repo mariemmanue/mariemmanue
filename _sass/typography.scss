@@ -3,29 +3,43 @@
 .content {
   a:hover { text-decoration: underline; }
 
+  /* Generic images responsive (exclude avatar) */
+  img:not(.profile-picture) { width: 100%; height: auto; display: block; }
+
+  /* Headings */
+  h1, h2, h3, .heading, span#name {
+    font-family: $font-heading;
+    color: $color-text;
+  }
+
+  /* Underlay highlight for headings (was hard-coded) */
+  span.heading {
+    position: relative;
+  }
+  span.heading::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: $color-accent2; /* sand */
+    opacity: .45;
+    left: -0.4em;
+    bottom: -0.1em;
+    height: 0.8em;
+    z-index: -1;
+  }
+
+  /* Avatar (circle, not squished) */
   .profile-picture {
-    width: 200px;        /* or use $image-size if you prefer */
-    aspect-ratio: 1 / 1; /* keep it square */
-    object-fit: cover;   /* crop without stretching */
-    border-radius: 50%;  /* circle */
+    width: $image-size;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
     margin: -10px 15px 0 0;
     float: left;
     display: block;
-
-    /* when the image sits inside a <p>, zero out spacing */
-    p & {
-      padding: 0;
-      margin: 0;
-    }
-
-    @media (max-width: $small-width) {
-      margin-top: -5px;
-    }
   }
 
-  /* Don’t let generic img rules override the avatar size */
-  img:not(.profile-picture) {
-    text-align: center;
-    width: 100%;
+  @media (max-width: $small-width) {
+    .profile-picture { width: 140px; margin-top: -5px; }
   }
 }
