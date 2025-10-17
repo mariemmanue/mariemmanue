@@ -11,10 +11,18 @@ In my dissertation, I’m developing machine learning algorithms to detect and m
 I’m supported by the [NSF-GRFP](https://www.pomona.edu/news/2023/05/03-eleven-pomona-college-students-and-alumni-awarded-nsf-graduate-research-fellowships) as well as Stanford’s [DARE]([https://linguistics.stanford.edu/news/tano-awarded-dare-fellowship](https://vpge.stanford.edu/fellowships-funding/dare/fellows/2025)), [RAISE](https://vpge.stanford.edu/fellowships-funding/raise/fellows/2023), and [HAI-TEP](https://hai.stanford.edu/policy/student-opportunities/tech-ethics-policy-fellowships) Fellowships. Beyond Stanford, I’ve interned at Google Research, IBM Research, and the Brookings Institution, conducting research on LLM neutrality evaluation, bias in generative and embedding models, and [AI policy for low-resource languages](https://www.brookings.edu/articles/closing-the-gap-a-call-for-more-inclusive-language-technologies/).
 
 ## Research Activity
-*Improving Neutral Point-of-View Generation with Data- and Parameter-Efficient RL*<br>
+November 2025: *Improving Neutral Point-of-View Generation with Data- and Parameter-Efficient RL*<br>
 Jessica Hoffmann, Christiane Ahlheim, Zac Yu, Aria Walfrand, Jarvis Jin, **Marie Tano**, Ahmad Beirami, Erin van Liemt, Nithum Thain, Hakim Sidahmed, & Lucas Dixon<br>
-EMNLP, 2025. [[preprint](https://arxiv.org/abs/2503.03654)]
+EMNLP 2025. [[preprint](https://arxiv.org/abs/2503.03654)]
 
 July 2025: Shared dissertation progress on developing instruction-tuned autoregressive models to identify features of African American English (AAE) at the [Linguistics for Justice: Advancing Reforms in the Criminal Legal System](https://sites.google.com/view/linguisticsforjustice).
 
 April 2025: Our paper received the [Richard Braddock Award for Best Article of the Year](https://cccc.ncte.org/cccc/awards/braddock) in College Composition and Communication (CCC).
+
+December 2024: *Closing the gap: A call for more inclusive language technologies*<br>
+Chinasa Okolo & Marie Tano
+[research commentary](https://www.brookings.edu/articles/closing-the-gap-a-call-for-more-inclusive-language-technologies/)
+
+October 2024:  *Moving toward truly responsible AI development in the global AI market*<br>
+Chinasa Okolo & Marie Tano<br>
+[research commentary](https://www.brookings.edu/articles/moving-toward-truly-responsible-ai-development-in-the-global-ai-market/)
