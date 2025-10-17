@@ -20,10 +20,10 @@ July 2025: Shared dissertation progress on developing instruction-tuned autoregr
 April 2025: Our paper received the [Richard Braddock Award for Best Article of the Year](https://cccc.ncte.org/cccc/awards/braddock) in College Composition and Communication (CCC).
 
 December 2024: *Closing the gap: A call for more inclusive language technologies*<br>
-Chinasa Okolo & Marie Tano<br>
+Chinasa Okolo & **Marie Tano**<br>
 [[research commentary](https://www.brookings.edu/articles/closing-the-gap-a-call-for-more-inclusive-language-technologies/)]
 
 October 2024:  *Moving toward truly responsible AI development in the global AI market*<br>
-Chinasa Okolo & Marie Tano<br>
+Chinasa Okolo & **Marie Tano**<br>
 [[research commentary](https://www.brookings.edu/articles/moving-toward-truly-responsible-ai-development-in-the-global-ai-market/)]<br>
 <br>
