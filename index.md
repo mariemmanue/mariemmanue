@@ -17,7 +17,7 @@ I’ve been supported by the [NSF-GRFP](https://www.pomona.edu/news/2023/05/03-e
   Jessica Hoffmann, Christiane Ahlheim, Zac Yu, Aria Walfrand, Jarvis Jin, **Marie Tano**, Ahmad Beirami, Erin van Liemt, Nithum Thain, Hakim Sidahmed, & Lucas Dixon.  
   *EMNLP 2025.* [[preprint](https://arxiv.org/abs/2503.03654)]
 - Presented dissertation research on instruction-tuning autoregressive models to identify features of African American English (AAE) at the *[Linguistics for Justice: Advancing Reforms in the Criminal Legal System](https://sites.google.com/view/linguisticsforjustice)* (July 2025).
-- Recipient of the [Richard Braddock Award for Best Article of the Year](https://cccc.ncte.org/cccc/awards/braddock) for *Best Article of the Year* in *College Composition and Communication* (April 2025).
+- Recipient of the [Richard Braddock Award for Best Article of the Year](https://cccc.ncte.org/cccc/awards/braddock) in *College Composition and Communication* (April 2025).
 
 **2024**
 - *Closing the Gap: A Call for More Inclusive Language Technologies.*  
