@@ -1,60 +1,36 @@
 @import "vars";
 
 .content {
-    a:hover {
-        text-decoration: underline;
+  a:hover { text-decoration: underline; }
+
+  /* ...existing list/blockquote styles... */
+
+  .profile-picture {
+    height: $image-size;
+    width:  $image-size;
+    position: relative;
+
+    /* was: margin: -10px 0 0 15px; (for right float) */
+    margin: -10px 15px 0 0;  /* space on the right now */
+    float: left;             /* was: right */
+    border-radius: 50%;
+
+    /* when the image sits inside a <p>, zero out spacing */
+    p & {
+      padding: 0;
+      margin: 0;
     }
-    ol {
-        counter-reset: list;
+
+    /* this media query was targeting a child <img>, 
+       but the element *is* the <img>, so use & */
+    @media (max-width: $small-width) {
+      & { margin-top: -5px; }
     }
-    ol > li {
-        list-style-position: none;
-        position: relative;
-        list-style: none;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    ul > li {
-        margin: 5px 0 5px 0;
-    }
-    ul {
-        padding: 0 20px 0 20px;;
-    }
-    ol {
-        padding: 0 30px 0 30px;
-    }
-    ol > li:before {
-        content: "[" counter(list, decimal) "] ";
-        counter-increment: list;
-        position: absolute;
-        left: -30px;
-    }
-    blockquote {
-        //border: 1px solid black;
-        border-left: 5px solid #333333;
-        margin: 20px 0 20px 0;
-        padding: 2px 8px 2px 8px;
-        font-style: italic;
-    }
-    .profile-picture {
-        height: $image-size;
-        width: $image-size;
-        position: relative;
-        margin: -10px 0 0 15px;
-        float: right;
-        border-radius: 50%;
-        p & {
-            padding: 0;
-            margin: 0;
-        }
-        @media (max-width: $small-width) {
-            img {
-                margin-top: -5px;
-            }
-        }
-    }
-    img {
-        text-align: center;
-        width: 100%;
-    }
+  }
+
+  /* Important: don't let the global rule blow up the avatar size */
+  img:not(.profile-picture) {
+    text-align: center;
+    width: 100%;
+  }
 }
