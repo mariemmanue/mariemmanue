@@ -51,30 +51,45 @@ hr {
 .pull-left  { @extend .alignable; float: left; }
 .pull-right { @extend .alignable; float: right; }
 
-/* Social icons in navbar */
+/* Social row under the navbar */
+.social-row {
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+}
+
 #social-links {
   list-style: none;
-  display: inline-flex;
-  gap: 12px;
+  display: inline-flex;  /* makes the icons hug each other */
+  gap: 14px;
   margin: 0;
-  padding: 5px 0;
+  padding: 6px 0 0;
 }
-#social-links .nav-list { margin: 0; }
+
+#social-links .nav-list {
+  /* kill float behavior carried by global classes */
+  float: none !important;
+  display: inline-block;
+  margin: 0;
+}
+
 #social-links a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   line-height: 1;
   font-size: 1.15rem;
-  color: $color-text;
+  color: $text;
   opacity: 0.9;
 }
-#social-links a:hover, #social-links a:focus {
+
+#social-links a:hover,
+#social-links a:focus {
   opacity: 1;
-  color: $color-accent;
+  color: $accent; /* your pretty brown accent */
 }
-/* Hide "/" separators in social list */
-#social-links + #navlist::before { content: ""; }
+
+/* don’t show "/" separators in the social row */
 #social-links .nav-list + .nav-list::before { content: ""; }
 
 /* Divs */
