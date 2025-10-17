@@ -62,6 +62,31 @@
                 <img id="ins-logo" src="{{ site.ins_logo }}" />
             {% endif %}
             <a id="author-name" class="alignable pull-left" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
+        
+            <ul class="social alignable pull-right navbar-ul">
+              {% if site.social.linkedin %}
+                <li class="alignable pull-left nav-list">
+                  <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+              {% endif %}
+              {% if site.social.scholar %}
+                <li class="alignable pull-left nav-list">
+                  <a href="{{ site.social.scholar }}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                  </a>
+                </li>
+              {% endif %}
+              {% if site.social.github %}
+                <li class="alignable pull-left nav-list">
+                  <a href="{{ site.social.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </li>
+              {% endif %}
+            </ul>
+            
             <ul id="navlist" class="alignable pull-right navbar-ul">
                 {% for x in site.nav %}
                     {% if x.name == "Resume" %}
