@@ -21,3 +21,8 @@ nav:
    link: "research"
  - name: "CV"
    link: "/2025CV.pdf"
+
+social:
+  linkedin: "https://www.linkedin.com/in/marie-emmanue/"
+  scholar:  "https://scholar.google.com/citations?hl=en&user=2MKh4nYAAAAJ"
+  github:   "https://github.com/mariemmanue"
