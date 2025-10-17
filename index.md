@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Marie Tano
 ---
 <img class="profile-picture" src="imgs/me.jpg">
 
