@@ -65,54 +65,7 @@
       {% endif %}
       <a id="author-name" class="alignable pull-left" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
 
-      <!-- Social icons (inline SVGs, no external icon CSS needed) -->
-      <ul class="social alignable pull-right navbar-ul" id="social-links">
-        {% if site.social.linkedin %}
-          <li class="alignable pull-left nav-list">
-            <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
-              <!-- LinkedIn SVG -->
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM14.5 9c-2.21 0-3.5 1.204-3.5 2.847V21h4v-6.5c0-.828.672-1.5 1.5-1.5S18 13.672 18 14.5V21h4v-7c0-3.038-2.462-5.5-5.5-5.5z"/>
-              </svg>
-            </a>
-          </li>
-        {% endif %}
-
-        {% if site.social.scholar %}
-          <li class="alignable pull-left nav-list">
-            <a href="{{ site.social.scholar }}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
-              <!-- Graduation-cap SVG -->
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M12 3l10 6-10 6L2 9l10-6zm-8 11h16v2H4v-2zm2 3h12v2H6v-2z"/>
-              </svg>
-            </a>
-          </li>
-        {% endif %}
-
-        {% if site.social.email %}
-          <li class="alignable pull-left nav-list">
-            <a href="{{ site.social.email }}" aria-label="Email" title="Email">
-              <!-- Mail SVG -->
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/>
-              </svg>
-            </a>
-          </li>
-        {% endif %}
-
-        {% if site.social.github %}
-          <li class="alignable pull-left nav-list">
-            <a href="{{ site.social.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
-              <!-- GitHub SVG -->
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.57v-2c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.1-.76.08-.74.08-.74 1.22.09 1.86 1.25 1.86 1.25 1.08 1.85 2.82 1.31 3.5 1 .11-.79.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.25-3.22-.13-.3-.54-1.52.12-3.16 0 0 1.02-.33 3.34 1.23a11.6 11.6 0 0 1 6.08 0c2.32-1.56 3.34-1.23 3.34-1.23.66 1.64.25 2.86.12 3.16.78.84 1.25 1.91 1.25 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57A12 12 0 0 0 12 .5z"/>
-              </svg>
-            </a>
-          </li>
-        {% endif %}
-      </ul>
-
-      <!-- Main nav -->
+      <!-- Main nav (top row) -->
       <ul id="navlist" class="alignable pull-right navbar-ul">
         {% for x in site.nav %}
           {% if x.name == "Resume" %}
@@ -127,8 +80,59 @@
         {% endfor %}
       </ul>
     </div>
+
+    <!-- Social icons row (centered under navbar) -->
+    <div class="social-row">
+      <ul class="social navbar-ul" id="social-links">
+        {% if site.social.linkedin %}
+          <li class="nav-list">
+            <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+              <!-- LinkedIn SVG -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM14.5 9c-2.21 0-3.5 1.204-3.5 2.847V21h4v-6.5c0-.828.672-1.5 1.5-1.5S18 13.672 18 14.5V21h4v-7c0-3.038-2.462-5.5-5.5-5.5z"/>
+              </svg>
+            </a>
+          </li>
+        {% endif %}
+
+        {% if site.social.scholar %}
+          <li class="nav-list">
+            <a href="{{ site.social.scholar }}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
+              <!-- Graduation-cap SVG -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 3l10 6-10 6L2 9l10-6zm-8 11h16v2H4v-2zm2 3h12v2H6v-2z"/>
+              </svg>
+            </a>
+          </li>
+        {% endif %}
+
+        {% if site.social.email %}
+          <li class="nav-list">
+            <a href="{{ site.social.email }}" aria-label="Email" title="Email">
+              <!-- Mail SVG -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/>
+              </svg>
+            </a>
+          </li>
+        {% endif %}
+
+        {% if site.social.github %}
+          <li class="nav-list">
+            <a href="{{ site.social.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+              <!-- GitHub SVG -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.57v-2c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.1-.76.08-.74.08-.74 1.22.09 1.86 1.25 1.86 1.25 1.08 1.85 2.82 1.31 3.5 1 .11-.79.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.25-3.22-.13-.3-.54-1.52.12-3.16 0 0 1.02-.33 3.34 1.23a11.6 11.6 0 0 1 6.08 0c2.32-1.56 3.34-1.23 3.34-1.23.66 1.64.25 2.86.12 3.16.78.84 1.25 1.91 1.25 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57A12 12 0 0 0 12 .5z"/>
+              </svg>
+            </a>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+
     <div style="clear:both"></div>
     <hr>
+
     {% if page.is_contact == true %}
       <div class="container content contact">
     {% else %}
@@ -143,6 +147,7 @@
         {% endif %}
       </div>
   </div>
+
   {% if site.tracking_id %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
