@@ -4,22 +4,21 @@
  * Basic
  */
 
-/* Basic */
 html {
   height: 100%;
   margin: 0;
   padding: 0;
+  background: $color-bg;
 }
 body {
   margin: 0;
-  font-family: $font-body;   /* was 'Source Serif Pro' */
-  color: $color-text;        /* text color */
-  background: $color-bg;     /* page background */
+  font-family: $font-body;
+  color: $color-text;
   height: 100%;
 }
 a {
   text-decoration: none;
-  color: $color-accent;      /* link color */
+  color: $color-accent;   /* link color */
 }
 a:hover, a:focus {
   text-decoration: underline;
@@ -28,13 +27,16 @@ hr {
   border: 0;
   height: 0;
   border-top: 1px solid $color-border;
-  border-bottom: 1px solid rgba(255,255,255,0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 
-/* Navbar */
+/*
+ * Navbar
+ */
+
 #author-name {
   font-size: 30px;
-  color: $color-text;        /* was #272727 */
+  color: $color-text;
   display: inline-block;
 }
 .navbar {
@@ -60,15 +62,14 @@ hr {
 
 #social-links {
   list-style: none;
-  display: inline-flex;  /* makes the icons hug each other */
+  display: inline-flex;
   gap: 14px;
   margin: 0;
   padding: 6px 0 0;
 }
 
 #social-links .nav-list {
-  /* kill float behavior carried by global classes */
-  float: none !important;
+  float: none !important;   /* neutralize float helpers */
   display: inline-block;
   margin: 0;
 }
@@ -79,14 +80,13 @@ hr {
   justify-content: center;
   line-height: 1;
   font-size: 1.15rem;
-  color: $text;
+  color: $color-text;        /* icons inherit this */
   opacity: 0.9;
 }
-
 #social-links a:hover,
 #social-links a:focus {
   opacity: 1;
-  color: $accent; /* your pretty brown accent */
+  color: $color-accent;      /* pretty brown hover */
 }
 
 /* don’t show "/" separators in the social row */
@@ -113,8 +113,8 @@ hr {
   .navbar-ul  { margin-top: 5px; }
 }
 @media (max-width: 500px) {
-  .navbar     { text-align: center; padding: 50px 0 0 0; }
-  #author-name{ width: 100%; float: none; }
+  .navbar           { text-align: center; padding: 50px 0 0 0; }
+  #author-name      { width: 100%; float: none; }
   #navlist, #social-links {
     padding: 10px 0;
     margin: 0;
@@ -124,13 +124,12 @@ hr {
     width: 100%;
   }
   #navlist li.alignable, #social-links li.alignable { display: inline-block; }
-  #navlist li.pull-left, #social-links li.pull-left { float: none; }
+  #navlist li.pull-left,  #social-links li.pull-left  { float: none; }
   #navlist li.nav-list { margin: 0; }
 }
 
-.subline    { color: $color-muted; font-style: italic; }
-.subline a  { color: $color-accent; }
+.subline   { color: $color-muted; font-style: italic; }
+.subline a { color: $color-accent; }
 
 @import "typography";
 @import "tables";
-
