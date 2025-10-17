@@ -4,6 +4,7 @@
  * Basic
  */
 
+/* Basic */
 html {
   height: 100%;
   margin: 0;
@@ -11,30 +12,29 @@ html {
 }
 body {
   margin: 0;
-  font-family: 'Source Serif Pro', serif;
+  font-family: $font-body;   /* was 'Source Serif Pro' */
+  color: $color-text;        /* text color */
+  background: $color-bg;     /* page background */
   height: 100%;
 }
 a {
   text-decoration: none;
-  color: $accent;
+  color: $color-accent;      /* link color */
 }
-a:hover {
+a:hover, a:focus {
   text-decoration: underline;
 }
 hr {
   border: 0;
   height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid rgba(255,255,255,0.6);
 }
 
-/*
- * Navbar
- */
-
+/* Navbar */
 #author-name {
   font-size: 30px;
-  color: #272727;
+  color: $color-text;        /* was #272727 */
   display: inline-block;
 }
 .navbar {
@@ -43,24 +43,13 @@ hr {
 .navbar-ul {
   display: inline-block;
   margin: 0;
-  padding: 5px 0 5px 0;
+  padding: 5px 0;
   margin-left: 20px;
 }
-.nav-list {
-  list-style-type: none;
-  margin: 0 5px 0 10px;
-}
-.alignable {
-  display: inline-block;
-}
-.pull-left {
-  @extend .alignable;
-  float: left;
-}
-.pull-right {
-  @extend .alignable;
-  float: right;
-}
+.nav-list { list-style-type: none; margin: 0 5px 0 10px; }
+.alignable { display: inline-block; }
+.pull-left  { @extend .alignable; float: left; }
+.pull-right { @extend .alignable; float: right; }
 
 /* Social icons in navbar */
 #social-links {
@@ -70,39 +59,29 @@ hr {
   margin: 0;
   padding: 5px 0;
 }
-#social-links .nav-list {
-  margin: 0; /* tighter spacing for icons */
-}
+#social-links .nav-list { margin: 0; }
 #social-links a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  font-size: 1.15rem; /* icon size */
-  color: #272727;     /* match author name */
+  font-size: 1.15rem;
+  color: $color-text;
   opacity: 0.9;
 }
-#social-links a:hover,
-#social-links a:focus {
+#social-links a:hover, #social-links a:focus {
   opacity: 1;
-  color: $accent;
+  color: $color-accent;
 }
-/* Hide "/" separators within the social list */
+/* Hide "/" separators in social list */
 #social-links + #navlist::before { content: ""; }
 #social-links .nav-list + .nav-list::before { content: ""; }
 
 /* Divs */
-
-.container {
-  max-width: $max-width;
-  margin: auto;
-}
-.wrapper {
-  min-height: 100%;
-}
+.container { max-width: $max-width; margin: auto; }
+.wrapper   { min-height: 100%; }
 
 /* Institute Image */
-
 #ins-logo {
   margin: auto;
   display: block;
@@ -111,60 +90,32 @@ hr {
 }
 
 /* Mobile */
-
 @media (max-width: 800px) {
-  .container {
-    max-width: $med-width;
-    transition: 0.3s ease all;
-  }
+  .container { max-width: $med-width; transition: 0.3s ease all; }
 }
-
 @media (max-width: 650px) {
-  .container {
-    max-width: 83%;
-  }
-  .navbar-ul {
-    margin-top: 5px;
-  }
+  .container  { max-width: 83%; }
+  .navbar-ul  { margin-top: 5px; }
 }
-
 @media (max-width: 500px) {
-  .navbar {
-    text-align: center;
-    padding: 50px 0px 0px 0px;
-  }
-  #author-name {
-    width: 100%;
-    float: none;
-  }
+  .navbar     { text-align: center; padding: 50px 0 0 0; }
+  #author-name{ width: 100%; float: none; }
   #navlist, #social-links {
-    padding: 10px 0 10px 0;
+    padding: 10px 0;
     margin: 0;
     display: block;
     float: none;
     text-align: center;
     width: 100%;
   }
-  #navlist li.alignable,
-  #social-links li.alignable {
-    display: inline-block;
-  }
-  #navlist li.pull-left,
-  #social-links li.pull-left {
-    float: none;
-  }
-  #navlist li.nav-list {
-    margin: 0;
-  }
+  #navlist li.alignable, #social-links li.alignable { display: inline-block; }
+  #navlist li.pull-left, #social-links li.pull-left { float: none; }
+  #navlist li.nav-list { margin: 0; }
 }
 
-.subline {
-  color: #888;
-  font-style: italic;
-}
-.subline a {
-  color: #7BA6B7;
-}
+.subline    { color: $color-muted; font-style: italic; }
+.subline a  { color: $color-accent; }
 
 @import "typography";
 @import "tables";
+
