@@ -9,7 +9,7 @@ I’m a PhD candidate in Linguistics at Stanford University, co-advised by Dan J
 My dissertation examines how linguistic variation among Black drivers in Oakland—particularly features of African American Language—affects police behavior during traffic stops. I’m supported by the NSF GRFP and Stanford’s DARE, RAISE, and HAI-TEP Fellowships. Beyond Stanford, I’ve interned at Google Research, IBM Research, and the Brookings Institution, conducting research on LLM neutrality evaluation, bias in generative and embedding models, and AI policy for low-resource languages.
 
 ## Research Activity
-*Improving Neutral Point-of-View Generation with Data- and Parameter-Efficient RL*
+*Improving Neutral Point-of-View Generation with Data- and Parameter-Efficient RL*<br>
 Jessica Hoffmann, Christiane Ahlheim, Zac Yu, Aria Walfrand, Jarvis Jin, **Marie Tano**, Ahmad Beirami, Erin van Liemt, Nithum Thain, Hakim Sidahmed, & Lucas Dixon<br>
 EMNLP, 2025. [[preprint](https://arxiv.org/abs/2503.03654)]
 
