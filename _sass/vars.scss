@@ -1,34 +1,31 @@
-/*
- * Customization Variables
- */
-
-$accent: #7bb78c;
-$image-size: 200px;
-
-/*
- * Build Variables, don't touch
- */
-
-$max-width: 700px;
-$med-width: 600px;
-$small-width: 480px;
-
-/* ===== Site Theme Variables ===== */
+/* ============================
+   Site Theme Variables
+   ============================ */
 
 /* Fonts */
-$font-body: "Merriweather", serif;              // or "Merriweather", serif
+$font-body:    "Merriweather", serif;
 $font-heading: "Playfair Display", serif;
 
-/* Colors (accessible contrasts on white-ish bg) */
-$color-text:   #2F2A26;   // deep brown
-$color-bg:     #FAF7F2;   // warm off-white / parchment
-$color-accent: #8C6A4A;   // sage green (links / hovers)
-$color-accent2:#D9C6A5;   // sand/wheat (highlights)
-$color-muted:  #9B8575;   // taupe (subtle)
-$color-border: #E6DED3;   // hairline dividers
+/* Colors (neutral browns) */
+$color-text:    #2F2A26;  /* deep brown */
+$color-bg:      #FAF7F2;  /* warm off-white / parchment */
+$color-accent:  #8C6A4A;  /* pretty brown (links/hover) */
+$color-accent2: #D9C6A5;  /* sand/wheat (highlights) */
+$color-muted:   #9B8575;  /* taupe (subtle text) */
+$color-border:  #E6DED3;  /* hairline dividers */
 
-/* Existing sizes (keep yours) */
+/* Back-compat aliases (used in older SCSS) */
+$text:      $color-text;
+$bg:        $color-bg;
+$border:    $color-border;
+$muted:     $color-muted;
+$accent:    $color-accent;
+$accent-2:  $color-accent2;
+
+/* Sizes */
 $image-size: 200px;
-$max-width: 700px;
-$med-width: 600px;
+
+/* Layout widths */
+$max-width:  700px;
+$med-width:  600px;
 $small-width: 480px;
