@@ -15,7 +15,7 @@ November 2025: *Improving Neutral Point-of-View Generation with Data- and Parame
 Jessica Hoffmann, Christiane Ahlheim, Zac Yu, Aria Walfrand, Jarvis Jin, **Marie Tano**, Ahmad Beirami, Erin van Liemt, Nithum Thain, Hakim Sidahmed, & Lucas Dixon<br>
 EMNLP 2025. [[preprint](https://arxiv.org/abs/2503.03654)]
 
-July 2025: Shared dissertation progress on developing instruction-tuned autoregressive models to identify features of African American English (AAE) at the [Linguistics for Justice: Advancing Reforms in the Criminal Legal System](https://sites.google.com/view/linguisticsforjustice).
+July 2025: Presented dissertation research on instruction-tuning autoregressive models to identify features of African American English (AAE) at the [Linguistics for Justice: Advancing Reforms in the Criminal Legal System](https://sites.google.com/view/linguisticsforjustice).
 
 April 2025: Our paper received the [Richard Braddock Award for Best Article of the Year](https://cccc.ncte.org/cccc/awards/braddock) in College Composition and Communication (CCC).
 
