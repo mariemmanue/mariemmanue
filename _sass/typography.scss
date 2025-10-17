@@ -3,17 +3,14 @@
 .content {
   a:hover { text-decoration: underline; }
 
-  /* ...existing list/blockquote styles... */
-
   .profile-picture {
-    width: 200px;            /* or your preferred size */
-    aspect-ratio: 1 / 1;     /* keeps it perfectly square */
-    object-fit: cover;       /* crops evenly instead of stretching */
-    border-radius: 50%;      /* makes it circular */
+    width: 200px;        /* or use $image-size if you prefer */
+    aspect-ratio: 1 / 1; /* keep it square */
+    object-fit: cover;   /* crop without stretching */
+    border-radius: 50%;  /* circle */
     margin: -10px 15px 0 0;
     float: left;
     display: block;
-  }
 
     /* when the image sits inside a <p>, zero out spacing */
     p & {
@@ -21,14 +18,12 @@
       margin: 0;
     }
 
-    /* this media query was targeting a child <img>, 
-       but the element *is* the <img>, so use & */
     @media (max-width: $small-width) {
-      & { margin-top: -5px; }
+      margin-top: -5px;
     }
   }
 
-  /* Important: don't let the global rule blow up the avatar size */
+  /* Don’t let generic img rules override the avatar size */
   img:not(.profile-picture) {
     text-align: center;
     width: 100%;
