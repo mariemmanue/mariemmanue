@@ -6,14 +6,14 @@
   /* ...existing list/blockquote styles... */
 
   .profile-picture {
-    height: $image-size;
-    width:  $image-size;
-    position: relative;
-
-    /* was: margin: -10px 0 0 15px; (for right float) */
-    margin: -10px 15px 0 0;  /* space on the right now */
-    float: left;             /* was: right */
-    border-radius: 50%;
+    width: 200px;            /* or your preferred size */
+    aspect-ratio: 1 / 1;     /* keeps it perfectly square */
+    object-fit: cover;       /* crops evenly instead of stretching */
+    border-radius: 50%;      /* makes it circular */
+    margin: -10px 15px 0 0;
+    float: left;
+    display: block;
+  }
 
     /* when the image sits inside a <p>, zero out spacing */
     p & {
